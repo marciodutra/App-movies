@@ -4,16 +4,9 @@ import Category, { categories, filterCategory } from "../../components/Category"
 import Container from "../../components/Container";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
-import { useState } from "react";
+import Carousel from "../../components/Carousel";
 
 function Home() {
-
-  const [nome, setNome] = useState("");
-
-  function pegarNome(event) {
-    console.log(event.target.value);
-    setNome(event.target.value);
-  }
 
   return (
     <>
@@ -22,25 +15,18 @@ function Home() {
 
       <Container>
 
-        <input
-          type="text"
-          placeholder="Nome"
-          onChange={pegarNome}
-        />
-
-        <h2>{nome}</h2>
-
-        {/*
         {
           categories.map((category, index) =>
             <Category category={category}>
-              {filterCategory(index).map((video) => (
-                <Card id={video.id} key={video.id} />
-              ))}
+              <Carousel>
+                {filterCategory(index).map((video) => (
+                  <Card id={video.id} key={video.id} />
+                ))}
+              </Carousel>
             </Category>
           )
         }
-        */}
+
 
       </Container>
 

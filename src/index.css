@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,6 +17,7 @@ code {
     monospace;
 }
 
+/* formatação geral dos cards */
 .cards {
   display: flex;
   gap: 5px;
