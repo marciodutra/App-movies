@@ -7,27 +7,27 @@ import Header from "../../components/Header";
 import Carousel from "../../components/Carousel";
 
 function Home() {
-
   return (
     <>
       <Header />
       <Banner image="favoritos" />
 
       <Container>
-
-        {
-          categories.map((category, index) =>
-            <Category category={category}>
-              <Carousel>
-                {filterCategory(index).map((video) => (
-                  <Card id={video.id} key={video.id} />
-                ))}
-              </Carousel>
-            </Category>
-          )
-        }
-
-
+        {categories.map((category, index) => (
+          <Category
+            key={index}
+            category={category}
+          >
+            <Carousel>
+              {filterCategory(index).map((video) => (
+                <Card
+                  key={video.id}
+                  id={video.id}
+                />
+              ))}
+            </Carousel>
+          </Category>
+        ))}
       </Container>
 
       <Footer />
