@@ -28,7 +28,8 @@
     font-size: 1.5rem;
 }
 
-.container input, .container select {
+.container input,
+.container select {
     background-color: #FFF;
     width: 100%;
     padding: 15px 10px;
@@ -39,16 +40,29 @@
     font-size: 1.125rem;
 }
 
+/* DIV DO BOTÃO */
+.container form div:nth-child(3) {
+    display: flex;
+    justify-content: center;
+}
+
+/* BOTÃO */
 .container button {
     background-color: #b71c1c;
     border-radius: 10px;
     font-weight: 600;
     font-size: 1.125rem;
-    padding: 24px 28px;
-    border: none; 
+    padding: 16px 40px;
+    border: none;
     cursor: pointer;
     color: #FFF;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
+
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+
+    display: inline-block;
 }
 
 .container button:hover {

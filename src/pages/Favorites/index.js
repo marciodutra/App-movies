@@ -4,6 +4,7 @@ import Footer from "../../components/Footer";
 import Container from "../../components/Container";
 import VideoList from "../../components/VideoList";
 import { useFavoriteContext } from "../../contexts/Favorites";
+import ScrollToTopButton from "../../components/ScrollToTopButton";
 
 function Favorites() {
 
@@ -11,6 +12,7 @@ function Favorites() {
 
     return(
         <>
+            <ScrollToTopButton />
             <Header />
             <Container>                
                 <section className={styles.favorites}>
