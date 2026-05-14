@@ -3,7 +3,7 @@ Após baixar ou clonar
 Estando na pasta do projeto app-movies
 No terminal rode o seguinte comando:
 npm install
-O comando irá fazer a instalação das dependências e da pasta node_modules. Mais, detalhes sobre esta operação eu mostro na aula 15 da série de vídeos.
+O comando irá fazer a instalação das dependências e da pasta node_modules.
 
 Depois da instalação das dependências, rode o comando:
 npm start
