@@ -21,10 +21,10 @@ function Home() {
             category={category}
           >
             <Carousel>
-              {filterCategory(index).map((video) => (
+              {filterCategory(index).map((video, i) => (
                 <Card
-                  key={video.id}
-                  id={video.id}
+                  key={i}
+                  video={video}
                 />
               ))}
             </Carousel>
